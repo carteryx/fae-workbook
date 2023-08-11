@@ -1,8 +1,9 @@
 # Linux基础
 ## Linux发行版
+
 Linux 是一个开源的操作系统内核，但由于其开放性和灵活性，产生了许多不同的 Linux 发行版（Distribution，缩写为 "distro"）。每个发行版都基于 Linux 内核，并包含了一系列的工具、库、桌面环境和应用程序，以创建一个完整的操作系统。
 
-##以下是一些常见的 Linux 发行版：
+## 以下是一些常见的 Linux 发行版：
 
 1.Ubuntu： 基于 Debian，被广泛用于桌面和服务器。它有不同的版本，如 Ubuntu Desktop、Ubuntu Server 等，以满足不同用途的需求。
 
