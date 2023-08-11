@@ -24,6 +24,31 @@ Linux 是一个开源的操作系统内核，但由于其开放性和灵活性�
 9.Elementary OS： 基于 Ubuntu，以精美的界面和用户友好的设计著称。
 
 10.Kali Linux： 专为网络安全和渗透测试而设计的发行版，内置了各种安全工具。
+## Linux文件结构
+
+1./：根目录
+
+2./bin:系统指令
+
+3./usr:应用程序
+
+4./var:可变文件，日志数据库等
+
+5./dev:外设
+
+6./lib:库
+
+7./proc:系统运行时文件
+
+8./etc:系统配置文件
+
+9./home:用户文件
+
+10.temp:临时文件
+
+11.opt:安装文件
+
+12./mnt:挂载文件
 ## Linux命令行
 Linux 命令行是在终端（Terminal）或命令行界面中输入和执行命令的方式，用于与 Linux 操作系统进行交互和管理。命令行是一个强大的工具，可以用于执行各种系统任务、文件操作、软件安装、配置管理等。
 ## 基本操作指令
@@ -164,3 +189,24 @@ vim filename
 * `:set number`
 
 这只是一些 vim 编辑器的基本用法。vim 有非常丰富的功能和命令，可以用于高效编辑文本文件。用户可以通过 vim 的内置帮助系统（在命令模式下输入 :help 并按回车键）了解更多详细信息和高级用法。
+## Linux包管理工具
+1.dpkg
+* `dpkg -i`:安装本地deb包
+* `dpkg  -L`：显示软件包文件的位置，配置文件在/etc
+
+2.apt:apt的线上软件源配置文件位于/etc/apt/sources.list
+* `apt install`:从源中安装包，会自动解决依赖问题
+* `apt upgrade`:升级所有可升级的包
+## Linux网络工具
+1.ifconfig:net-tools包的工具，常用来获取网卡状态
+
+2.ping、telnet、netplan
+
+* `ping<ip>`:可以测试网络联通
+* `telnet<ip><port>`:测试端口
+* `vim /etc/netplan/**.yaml`:修改对应网卡ip,netplan apply应用更改
+## Linux远程工具
+1.ssh远程格式：ssh <username>@<host>连接，回车后输入密码
+
+2.scp远程复制格式：<file> <username>@<host>:/path/,回车输入密码  -r文件夹
+
