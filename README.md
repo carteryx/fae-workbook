@@ -27,7 +27,7 @@
 
 ***
 ## [Linux基础](./Linux基础/Linux基础.md)
-## [Docker基础](./基础知识/Docker.md)
+## [Docker基础](./Linux基础/Docker.md)
 
 ## 网络基础
 
@@ -36,6 +36,19 @@
 # 产品知识
 
 ## BM1684详情
+
+| 芯片型号 | BM1684 |
+| ---- | ---- |
+|AI算力 | INT8 17.6TOPS<br>FP32 2.2TFLOPS |
+|主控CPU | ARM A53 8核 42320 DMIPS 2.3GHz|
+|视频编解码能力 | H.264 & H.265:1080P@960fps视频解码能力<br>H.264 & H.265:1080P@50fps视频编码能力 |
+| 图片解码能力 | JPEG 480 张/秒@1080P |
+| 内存 | 16GB |
+| 存储 | EMMC:32GB<br>FLASH:16MB |
+| 接口 | 1个 PCIE EP X16 Gen3<br>1个 PCIE EPX8<br>Gen3 /1个PCIE RC X8 Gen3<br>10/100/1000 RGMII X2<br>I2C/UART/PWM/SPI/GPIO |
+| 工作温度 | -40℃ ~ +105℃ |
+| 功耗 | 典型16W |
+| 深度学习框架 | TensorFlow /Pytorch / Paddle / Caffe / MxNet / Tengine / DarkNet |
 
 ***
 
