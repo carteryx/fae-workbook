@@ -187,7 +187,8 @@ vim filename
 
 14.显示行号： 在命令模式下使用以下命令来显示行号：
 * `:set number`
-
+15.常用命令速查表：
+![image](https://github.com/carteryx/fae-workbook/assets/49430896/84c151ab-4744-4575-85cc-ff2fc9a694aa)
 这只是一些 vim 编辑器的基本用法。vim 有非常丰富的功能和命令，可以用于高效编辑文本文件。用户可以通过 vim 的内置帮助系统（在命令模式下输入 :help 并按回车键）了解更多详细信息和高级用法。
 ## Linux包管理工具
 1.dpkg
