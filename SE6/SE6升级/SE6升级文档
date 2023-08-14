@@ -7,34 +7,7 @@
 算力板1的6块核心板 为 172.16.150.11~172,16.150.16
 
 核心板的 ip 是由控制板在开机前设置给核心板，如果单独修改控制板 etho 或者 ethl 的可能会导致核心板无法连通的问题
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+https://github.com/GLSBZych97/fae-workbook/blob/main/SE6/SE6%E5%8D%87%E7%BA%A7/pics/fig1.png
 
 
 
