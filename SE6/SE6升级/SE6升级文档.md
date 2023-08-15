@@ -117,7 +117,7 @@ root@BH0007-host:/data/ota# ./local_update.sh md5.txt
 ### 2.1 核心板升级步骤
 核心板升级需要注意升级前的版本为多少，现在有两种情况：4.9>>5.4 和 5.4>>5,4
 
-2.1.1 核心板4.9升级为5.4操作步骤
+**2.1.1 核心板4.9升级为5.4操作步骤**
 
 1. 拷贝spi_flash.bin 从控制板升级包（sdcard包）到控制版/home/linaro 目录
 2. sudo -i
@@ -132,7 +132,7 @@ root@BH0007-host:/data/ota# ./local_update.sh md5.txt
 
 整个升级大概15分钟，可以使用 ./core_run_command_bynet.sh "bm_version" linaro linaro 检查版本 (由于目前有cpld的bug，只能等待15分钟左右手动上下电，再检查版本 )
 
-2.1.2 核心板5.4升级为5.4操作步骤
+**2.1.2 核心板5.4升级为5.4操作步骤**
 
 1. sudo -i
 2. cd /root/se6_ctrl/script/
@@ -140,7 +140,7 @@ root@BH0007-host:/data/ota# ./local_update.sh md5.txt
 4. ./core_run_command_bynet.sh "sudo reboot" linaro linaro
    
 整个升级大概15分钟，可以使用 ./core_run_command_bynet.sh "bm_version" linaro linaro check版本
-2.1.3 升级单个核心板
+**2.1.3 升级单个核心板**
 
 参考第一节中各核心板的编号和ip，最后的数字5即为第五块核心板172.16.140.15。
 
