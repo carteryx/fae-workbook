@@ -145,9 +145,9 @@
 | 处理器 | 2颗 Intel Xeon 第二代可拓展处理器 |
 | 内存 | 24 * DDR4 DIMM 3200MHz，最高 3TB |
 | 存储 | 12块 2.5/3.5“ SATA/ SAS 硬盘 |
-| 接口 | 前：2*USB3.0,1*VGA<br>后：2*USB3.01*VGA,1*RJ45 串口 ,1RJ45 系统管理接口 ,2*GE 口<br>内：1*USB2.0,2*7pin SATA; |
+| 接口 | 前：2 * USB3.0,1 * VGA<br>后：2 * USB3.0,1 * VGA,1 * RJ45 串口 ,1 * RJ45 系统管理接口 ,2 * GE 口<br>内：1 * USB2.0,2 * 7pin SATA; |
 | 电源 | 2个 1300W 铂金电源 支持 1+1 冗余模式 |
-| 工作温度 | 5C ~ 35 C |
+| 工作温度 | 5°C ~ 35 °C |
 | 操作系统 | Ubuntu / CentOS / Debian |
 | 深度学习框架 | TensorFlow / PyTorch /Paddle / Caffe / ONNX / MXNet / Tengine /DarkNet|
 
@@ -167,11 +167,11 @@
 | 图片解码能力 | JPEG: 24400张/秒 @1080P |
 | 显存规格 | 216GB LPDDR4x 1152GB/s |
 | 协处理器 | ARM A53 240核 @2.3GHz |
-| 尺寸及重量 | 2U(87*436*815mm) 33.2kg |
+| 尺寸及重量 | 2U(87\*436\*815mm) 33.2kg |
 | 处理器 | 1颗 AMD EPYC 7002系列处理器 |
 | 内存 | 8 * DDR4 DIMM 3200MHz，最高1TB |
 | 存储 | 6块2.5" SATA/SAS硬盘 / 2块2.5" U.2 NVMe/SATA SSD |
-| 接口 |2个SFP+ 10G LAN接口，2 x USB3.0 / 1 x VGA / 1 x MGMT |
+| 接口 |2个SFP + 10G LAN接口，2 x USB3.0 / 1 x VGA / 1 x MGMT |
 | 电源 | 2个2200W 80 PLUS铂金电源，支持1+1冗余模式|
 | 工作温度 | 10°C ~ 35°C |
 | 操作系统 | Ubuntu / CentOS / Debian |
