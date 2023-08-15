@@ -1,4 +1,4 @@
-1. 升级完后核心板ping不通或ping得通但无法进入核心板系统
+**1. 升级完后核心板ping不通或ping得通但无法进入核心板系统**
    
   将spi_flash_bm1684.bin文件拷贝至/root/目录下。在控制板上通过串口进入系统不通的核心板：
 ```
@@ -36,7 +36,7 @@ se6ctr_set_reset 3
 如果遇到了在输入ymodem 0x10100000后一直打印CCCCCCC的问题，可以使用下面的问题2的处理方式解决
 
 
-2. 当上述方式无法正常完成烧录，可以通过第二种方法升级
+**2. 当上述方式无法正常完成烧录，可以通过第二种方法升级**
 
 演示视频：http://219.142.246.77:65000/sharing/QwqZOGAlh(bySE6升级方案说明 - 张泽韬 - Confluence-Sophgo)(注：视频中的ip与现在盒子的算力板ip设置不一致，具体参考本文第一节的ip介绍)
 
@@ -52,15 +52,12 @@ setenv chip_type bm1684
 
 setenv scriptaddr 0x300040000
 
-# 这个是给1-6号板卡的IP
 
-setenv serverip 172.16.140.200
+setenv serverip 172.16.140.200 (这个是给1-6号板卡的IP)
 
 setenv ipaddr 172.16.140.11（11~16选一个）
 
-# 这个是给7-12号板卡的IP
-
-setenv serverip 172.16.150.200
+setenv serverip 172.16.150.200  (7-12号板卡的IP)
 
 setenv ipaddr 172.16.150.（11~16选一个）
 
