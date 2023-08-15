@@ -122,13 +122,13 @@ root@BH0007-host:/data/ota# ./local_update.sh md5.txt
 1. 拷贝spi_flash.bin 从控制板升级包（sdcard包）到控制版/home/linaro 目录
 2. sudo -i
 3. 升级spi_flash.bin
-  a. cd /root/se6_ctrl/script/
-  b. ./core_run_command_bynet.sh "~/script/scp_file2dir_local.exp 192.168.2.104（控制板 wan口ip） linaro linaro ~/spi_flash.bin ~ /" linaro linaro
-  c. cp /usr/sbin/flash_update /home/linaro/
-  d. /core_run_command_bynet.sh "~/script/scp_file2dir_local.exp 192.168.2.104（控制板wan 口ip） linaro linaro ~/flash_update ~ /" linaro linaro
-  e. ./core_run_command_bynet.sh "sudo ./flash_update -i spi_flash.bin -b 0x6000000" linaro linaro
-4. ./core_run_command_bynet.sh "~/tftp_update/mk_bootscr.sh" linaro linaro
-5. source ~/se6_ctrl/se6ctr.sh ;se6ctr_set_reset 1
+   1. . cd /root/se6_ctrl/script/
+   2.  ./core_run_command_bynet.sh "~/script/scp_file2dir_local.exp 192.168.2.104（控制板 wan口ip） linaro linaro ~/spi_flash.bin ~ /" linaro linaro
+   3. cp /usr/sbin/flash_update /home/linaro/
+   4. /core_run_command_bynet.sh "~/script/scp_file2dir_local.exp 192.168.2.104（控制板wan 口ip） linaro linaro ~/flash_update ~ /" linaro linaro
+   5. ./core_run_command_bynet.sh "sudo ./flash_update -i spi_flash.bin -b 0x6000000" linaro linaro
+5. ./core_run_command_bynet.sh "~/tftp_update/mk_bootscr.sh" linaro linaro
+6. source ~/se6_ctrl/se6ctr.sh ;se6ctr_set_reset 1
 整个升级大概15分钟，可以使用 ./core_run_command_bynet.sh "bm_version" linaro linaro 检查版本 (由于目前有cpld的bug，只能等待15分钟左右手动上下电，再检查版本 )
 
 2.1.2 核心板5.4升级为5.4操作步骤
