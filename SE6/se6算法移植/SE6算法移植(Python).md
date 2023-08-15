@@ -6,6 +6,6 @@
 
 操作步骤如下：
 
-    &emsp;&emsp;&emsp;&emsp;1. 从算能官网上下载符合环境依赖的sophon-sail的压缩包，执行操作后生成wheel包文件（在X86平台操作）
+  &emsp;&emsp;&emsp;&emsp;1. 从算能官网上下载符合环境依赖的sophon-sail的压缩包，执行操作后生成wheel包文件（在X86平台操作）
     
    &emsp;&emsp;&emsp;&emsp; 2. 将wheel包文件拷贝至算力设备，在算力设备上安装sophon-sail（在算力设备上操作）
