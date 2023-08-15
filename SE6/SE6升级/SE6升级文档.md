@@ -129,20 +129,22 @@ root@BH0007-host:/data/ota# ./local_update.sh md5.txt
    5. ./core_run_command_bynet.sh "sudo ./flash_update -i spi_flash.bin -b 0x6000000" linaro linaro
 5. ./core_run_command_bynet.sh "~/tftp_update/mk_bootscr.sh" linaro linaro
 6. source ~/se6_ctrl/se6ctr.sh ;se6ctr_set_reset 1
+
 整个升级大概15分钟，可以使用 ./core_run_command_bynet.sh "bm_version" linaro linaro 检查版本 (由于目前有cpld的bug，只能等待15分钟左右手动上下电，再检查版本 )
 
 2.1.2 核心板5.4升级为5.4操作步骤
 
-sudo -i
-cd /root/se6_ctrl/script/
-./core_run_command_bynet.sh "~/tftp_update/mk_bootscr.sh" linaro linaro
-./core_run_command_bynet.sh "sudo reboot" linaro linaro
+1. sudo -i
+2. cd /root/se6_ctrl/script/
+3. ./core_run_command_bynet.sh "~/tftp_update/mk_bootscr.sh" linaro linaro
+4. ./core_run_command_bynet.sh "sudo reboot" linaro linaro
+   
 整个升级大概15分钟，可以使用 ./core_run_command_bynet.sh "bm_version" linaro linaro check版本
 2.1.3 升级单个核心板
 
 参考第一节中各核心板的编号和ip，最后的数字5即为第五块核心板172.16.140.15。
 
-sudo -i
-cd ~/se6_ctrl/script/
-./core_run_command_bynet.sh "~/tftp_update/mk_bootscr.sh" linaro linaro 5
-./core_run_command_bynet.sh "sudo reboot" linaro linaro 5
+1. sudo -i
+2. cd ~/se6_ctrl/script/
+3. ./core_run_command_bynet.sh "~/tftp_update/mk_bootscr.sh" linaro linaro 5
+4. ./core_run_command_bynet.sh "sudo reboot" linaro linaro 5
