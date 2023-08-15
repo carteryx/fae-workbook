@@ -67,7 +67,7 @@ setenv reset_after 1
 
 i2c dev 1; i2c mw 0x69 1 0
 
-#这一步需要确定tftp下载文件是否成功，如果没有成功需要查看ip配置是否错误
+这一步需要确定tftp下载文件是否成功，如果没有成功需要查看ip配置是否错误
 
 tftp ${scriptaddr} /$ota_path/boot_spif.scr
 
