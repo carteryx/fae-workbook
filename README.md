@@ -154,7 +154,28 @@
 ### SG6-6-A32
 
 ### SG6-10-B22
-
+#### 产品规格
+| 产品型号 | SG6-10-B22 |
+| :---- | :---- |
+| 产品形态 | 2U机架式AI服务器 |
+| AI算力 | INT8 528 TOPS<br>FP32 66 TFLOPS |
+| 视频解码能力 | H.264 & H.265: 1080P @28800fps |
+| 视频解码分辨率 | 8192 * 8192 / 8K / 4K / 1080P / 720P / D1 / CIF |
+| 视频编码能力 | H.264 & H.265: 1080P @1500fps
+| 视频编码分辨率 | 4K / 1080P / 720P / D1 / CIF |
+| 视频转码能力 | 最大540 路 (1080P to CIF)
+| 图片解码能力 | JPEG: 24400张/秒 @1080P |
+| 显存规格 | 216GB LPDDR4x 1152GB/s |
+| 协处理器 | ARM A53 240核 @2.3GHz |
+| 尺寸及重量 | 2U(87*436*815mm) 33.2kg |
+| 处理器 | 1颗 AMD EPYC 7002系列处理器 |
+| 内存 | 8 * DDR4 DIMM 3200MHz，最高1TB |
+| 存储 | 6块2.5" SATA/SAS硬盘 / 2块2.5" U.2 NVMe/SATA SSD |
+| 接口 |2个SFP+ 10G LAN接口，2 x USB3.0 / 1 x VGA / 1 x MGMT |
+| 电源 | 2个2200W 80 PLUS铂金电源，支持1+1冗余模式|
+| 工作温度 | 10°C ~ 35°C |
+| 操作系统 | Ubuntu / CentOS / Debian |
+| 深度学习框架 | TensorFlow / PyTorch /Paddle / Caffe / ONNX / MXNet / Tengine /DarkNet|
 ***
 # 开发环境配置
 
