@@ -19,8 +19,7 @@ SE6 控制板默认会为所有的算力核心板映射 12个端口 (22 端口)�
 1.2.1 WAN IP获取：
 
 使用micro usb数据线连接串口和PC，使用串口登录设备后使用ifconfig命令查看WAN(enp3s0)口IP。
-
-
+![image](https://github.com/GLSBZych97/fae-workbook/blob/main/SE6/SE6%E5%8D%87%E7%BA%A7/pics/fig2.png)
 
 1.2.2 WAN IP修改
 
@@ -63,10 +62,10 @@ SD卡刷升级步骤：
 
 6. 升级完成，将SE6重新上电
 
-### 1.2无需SD卡升级方法（参考xinming.zhanghttps://wiki.sophgo.com/x/x0clAw**）**
+### 1.2无需SD卡升级方法（参考xinming.zhanghttps://wiki.sophgo.com/x/x0clAw）
 
 a、登录SE6算力服务器后，先执行如下命令，确认当前SE6算力服务器版本信息
-
+```
 linaro@bm1684:~$ sudo su
 
 root@bm1684:/home/linaro# cd /root/se6_ctrl/script/
@@ -82,9 +81,9 @@ KernelVersion : Linux bm1684 4.9.38-bm1684-v10.6.0-00575-ga2df70e #1 SMP Tue May
 HWVersion: 0x01
 
 MCUVersion: 0x16
-
+```
 b、执行如下命令，将SE6算力服务器侧/root/ota目录清空
-
+```
 root@BH0007-host:/home/linaro# cd /data/ota/
 
 root@BH0007-host:/data/ota# rm -r *
@@ -94,11 +93,10 @@ root@BH0007-host:/data/ota# ls -l
 total 0
 
 root@BH0007-host:/data/ota#
-
+```
 c、通过xftp或winscp工具，将提前获取到的se6_ctl_sdcard文件夹下的升级包拷贝到SE6算力服务器的/data/ota目录下，如下图
-
-
-
+![image](https://github.com/GLSBZych97/fae-workbook/blob/main/SE6/SE6%E5%8D%87%E7%BA%A7/pics/fig3.png)
+![image](https://github.com/GLSBZych97/fae-workbook/blob/main/SE6/SE6%E5%8D%87%E7%BA%A7/pics/fig4.png)
 
 
 d、执行如下命令，启动SE6算力服务器控制板版本升级
@@ -112,7 +110,7 @@ root@BH0007-host:/data/ota# chmod +x local_update.sh
 root@BH0007-host:/data/ota# ./local_update.sh md5.txt
 
 注：控制板升级大约耗时5min左右
-
+![image](https://github.com/GLSBZych97/fae-workbook/blob/main/SE6/SE6%E5%8D%87%E7%BA%A7/pics/fig5.png)
 
 
 ## 2. 核心板升级
